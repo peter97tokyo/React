@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "express": "^4.18.2",
+    "router": "^1.3.7",
     "yarn": "^1.22.19"
-  }
+  },
+  "name": "react",
+  "description": "Nodejs MVC 패턴의 views를 위한 React",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://peter97tokyo@github.com/peter97tokyo/React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peter97tokyo/React/issues"
+  },
+  "homepage": "https://github.com/peter97tokyo/React#readme"
 }

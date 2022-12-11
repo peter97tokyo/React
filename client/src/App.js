@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
+// Route(중급88)
+import {Route, Routes} from 'react-router-dom';
+// reactProxy (실무109) 
+// import component명을 reactProxy를 사용했지만 PascalCase관련 error로 인해 ReactProxy로 변경하여 해결
+import ReactProxy from './components/R109_reactProxy';
+import Home from './components/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render(){
+    return (
+        <div className="App">
+          <h1>Hello App!</h1>
+          
+          <Routes>
+            <Route exact path="/" element={<Home/>}></Route>
+            <Route exact path="/reactProxy" element={<ReactProxy/>}></Route>
+          </Routes>
+        </div>
+    )
+  }
 }
+
+
 
 export default App;
