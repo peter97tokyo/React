@@ -1,10 +1,16 @@
 import React, {Component} from 'react';
 
+
 class R109_reactProxy extends Component {
+
+    // componentDidMount, async, await, fetch
     componentDidMount = async ()=> {
         const response = await fetch('/users');
-        const body = await response.text();
-        console.log("body : "+ body);
+        // 실무109
+        // const body = await response.text();
+        // 실무110
+        const body = await response.json();
+        console.log("body.message : "+ body.message);
 
     }
     render(){

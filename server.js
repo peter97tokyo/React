@@ -13,5 +13,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 
-module.exports = app;
+// module.exports = app;
+app.listen(5000, ()=>{
+    console.log('server is running')
+})
 
