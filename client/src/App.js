@@ -7,6 +7,8 @@ import {Route, Routes} from 'react-router-dom';
 // import component명을 reactProxy를 사용했지만 PascalCase관련 error로 인해 ReactProxy로 변경하여 해결
 import ReactProxy from './components/R109_reactProxy';
 import Home from './components/Home';
+// node 서버 api를 post로 json 데이터 호출하기 (실무111)
+import ApiPostJson from './components/R111_ApiPostJson';
 
 
 class App extends Component {
@@ -18,6 +20,7 @@ class App extends Component {
           <Routes>
             <Route exact path="/" element={<Home/>}></Route>
             <Route exact path="/reactProxy" element={<ReactProxy/>}></Route>
+            <Route exact path="/apiPostJson" element={<ApiPostJson/>}></Route>
           </Routes>
         </div>
     )

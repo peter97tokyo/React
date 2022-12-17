@@ -12,4 +12,14 @@ router.get('/',(req, res, next)=>{
 });
 // 실무110-2 node 서버(localhost:5000)에서 user 경로를 get 방식으로 호출하면, key가 message이고 value가 node get success인 json 데이터를 response로 전송한다.
 
+router.get('/test',(req, res, next)=>{    
+    res.send({'message':'node get success'});
+});
+
+// 실무111
+/* POST USERS LISTING */
+router.post('/', (req, res, next)=>{
+    res.send({'message': 'node post success'});
+})
+
 module.exports = router;
